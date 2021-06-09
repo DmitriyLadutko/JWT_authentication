@@ -82,6 +82,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     """Сообщает Django, что определенный выше класс UserManager должен управлять объектами этого типа."""
     object = UserManger()
 
+
     @property
     def token(self):
         """
